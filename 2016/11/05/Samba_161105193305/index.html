@@ -17,10 +17,12 @@
 <meta property="og:url" content="http://kunbo.github.io/2016/06/04/Samba/index.html">
 <meta property="og:site_name" content="有福方读书">
 <meta property="og:description" content="为了能够在win7上更加方便的访问linux的工程文件，考虑方便性和简单性，用Samba来实现">
-<meta property="og:updated_time" content="2016-11-05T08:45:17.817Z">
+<meta property="og:image" content="https://raw.githubusercontent.com/kunbo/kunbo.github.io/0accb667a26dd5d36cd2832e8d102b97e05f2a33/img/1.png">
+<meta property="og:updated_time" content="2016-11-05T12:02:37.459Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Samba实现Win7和Linux之间文件共享">
 <meta name="twitter:description" content="为了能够在win7上更加方便的访问linux的工程文件，考虑方便性和简单性，用Samba来实现">
+<meta name="twitter:image" content="https://raw.githubusercontent.com/kunbo/kunbo.github.io/0accb667a26dd5d36cd2832e8d102b97e05f2a33/img/1.png">
 
     
     <link rel="alternative" href="/atom.xml" title="有福方读书" type="application/atom+xml">
@@ -48,7 +50,7 @@
 				<h1 class="site-name"><a href="/" title="有福方读书">有福方读书</a></h1>
 				<h2 class="blog-motto">If you only do what you can do, you will never be more than you are now</h2>
 			</div>
-			<div class="navbar"><a class="navbutton navmobile" href="#" title="Menu">
+			<div class="navbar"><a class="navbutton navmobile" href="#" title="菜单">
 			</a></div>
 			<nav class="animated">
 				<ul>
@@ -66,7 +68,7 @@
  					
 					<form class="search" action="//google.com/search" method="get" accept-charset="utf-8">
 						<label>Search</label>
-						<input type="search" id="search" name="q" autocomplete="off" maxlength="20" placeholder="Search" />
+						<input type="search" id="search" name="q" autocomplete="off" maxlength="20" placeholder="搜索" />
 						<input type="hidden" name="q" value="site:kunbo.github.io">
 					</form>
 					
@@ -89,28 +91,44 @@
 		<a href="/about" title="ykb" target="_blank" itemprop="author">ykb</a>
 		
   <p class="article-time">
-    <time datetime="2016-06-04T09:37:45.096Z" itemprop="datePublished"> Published 2016-06-04</time>
+    <time datetime="2016-06-04T09:37:45.096Z" itemprop="datePublished"> 发表于 2016-06-04</time>
     
   </p>
 </header>
 	<div class="article-content">
 		
 		<div id="toc" class="toc-article">
-			<strong class="toc-title">Contents</strong>
+			<strong class="toc-title">文章目录</strong>
 		
-			
+			<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#简介"><span class="toc-number">1.</span> <span class="toc-text">简介</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Samba在Linux下的安装"><span class="toc-number">1.1.</span> <span class="toc-text">Samba在Linux下的安装</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#目录"><span class="toc-number">1.1.1.</span> <span class="toc-text">目录:</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-检查是否已经安装"><span class="toc-number">1.2.</span> <span class="toc-text">1.检查是否已经安装</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-安装命令"><span class="toc-number">1.3.</span> <span class="toc-text">2.安装命令</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-配置Samba"><span class="toc-number">1.4.</span> <span class="toc-text">3.配置Samba</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-启动Samba"><span class="toc-number">1.5.</span> <span class="toc-text">4.启动Samba</span></a></li></ol></li></ol>
 		
 		</div>
 		
-		<p>Welcome to My Site</p>
-<blockquote>
-<p>一盏灯， 一片昏黄； 一简书， 一杯淡茶。 守着那一份淡定， 品读属于自己的寂寞。 保持淡定， 才能欣赏到最美丽的风景！ 保持淡定， 人生从此不再寂寞。</p>
+		<h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><blockquote>
+<p>  为了能够在win7上更加方便的访问linux的工程文件，因为Samba最大的功能就是可以用于Linux与windows系统直接的文件共享和打印共享，也可以用于Linux与Linux之间的资源共享，考虑方便性和简单性，于是用Samba来实现。</p>
 </blockquote>
-<ul>
-<li>文本1</li>
-<li>文本2</li>
-<li>文本3</li>
-</ul>
+<h3 id="Samba在Linux下的安装"><a href="#Samba在Linux下的安装" class="headerlink" title="Samba在Linux下的安装"></a>Samba在Linux下的安装</h3><hr>
+<h4 id="目录"><a href="#目录" class="headerlink" title="目录:"></a><strong>目录:</strong></h4><ol>
+<li>检查是否已经安装</li>
+<li>安装命令</li>
+<li>配置Samba</li>
+<li>启动Samba</li>
+</ol>
+<hr>
+<h3 id="1-检查是否已经安装"><a href="#1-检查是否已经安装" class="headerlink" title="1.检查是否已经安装"></a>1.检查是否已经安装</h3><hr>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">rpm -q samba</span><br></pre></td></tr></table></figure>
+<p>如果已经安装，显示如下：</p>
+<p><img src="https://raw.githubusercontent.com/kunbo/kunbo.github.io/0accb667a26dd5d36cd2832e8d102b97e05f2a33/img/1.png" alt="Minion"></p>
+<hr>
+<h3 id="2-安装命令"><a href="#2-安装命令" class="headerlink" title="2.安装命令"></a>2.安装命令</h3><hr>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yum -y install samba samba-client</span><br></pre></td></tr></table></figure>
+<hr>
+<h3 id="3-配置Samba"><a href="#3-配置Samba" class="headerlink" title="3.配置Samba"></a>3.配置Samba</h3><hr>
+<p>Samba的主配置文件为/etc/samba/smb.conf<br>把原来的smb.conf备份成smb.confBAK，再修改</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line">[global]</span><br><span class="line">    workgroup = MYGROUP</span><br><span class="line">    server string = Samba Server Version %v</span><br><span class="line">    hosts allow = <span class="number">127.</span> <span class="number">192.168</span><span class="number">.12</span>. <span class="number">192.168</span><span class="number">.13</span>. IP</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">[homes]</span><br><span class="line">    comment = Home Directories</span><br><span class="line">    browseable = no</span><br><span class="line">    writable = yes</span><br><span class="line"></span><br><span class="line">[printers]</span><br><span class="line">    comment = All Printers</span><br><span class="line">    path = <span class="regexp">/var/</span>spool/samba</span><br><span class="line">    browseable = no</span><br><span class="line">    guest ok = no</span><br><span class="line">    writable = no</span><br><span class="line">    printable = yes</span><br><span class="line"></span><br><span class="line">[KunShared]</span><br><span class="line">path = <span class="regexp">/data/</span>kun/</span><br><span class="line">writeable = yes</span><br><span class="line">browseable = yes</span><br><span class="line">guest ok = yes</span><br><span class="line">public = yes</span><br><span class="line">available = yes</span><br></pre></td></tr></table></figure>
+<hr>
+<h3 id="4-启动Samba"><a href="#4-启动Samba" class="headerlink" title="4.启动Samba"></a>4.启动Samba</h3><hr>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">service smb restart 或者 service smb start</span><br></pre></td></tr></table></figure>
   
 	</div>
 		<footer class="article-footer clearfix">
@@ -139,20 +157,33 @@
    	       
 	</article>
 	
+<nav class="article-nav clearfix">
+ 
+ <div class="prev" >
+ <a href="/2016/11/05/Samba_161105193305/" title="">
+  <strong>上一篇：</strong><br/>
+  <span>
+  (no title)</span>
+</a>
+</div>
+
+
+</nav>
+
 	
 
 </div>  
-      <div class="openaside"><a class="navbutton" href="#" title="Show Sidebar"></a></div>
+      <div class="openaside"><a class="navbutton" href="#" title="显示侧边栏"></a></div>
 
   <div id="toc" class="toc-aside">
-  <strong class="toc-title">Contents</strong>
+  <strong class="toc-title">文章目录</strong>
  
- 
+ <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#简介"><span class="toc-number">1.</span> <span class="toc-text">简介</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Samba在Linux下的安装"><span class="toc-number">1.1.</span> <span class="toc-text">Samba在Linux下的安装</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#目录"><span class="toc-number">1.1.1.</span> <span class="toc-text">目录:</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-检查是否已经安装"><span class="toc-number">1.2.</span> <span class="toc-text">1.检查是否已经安装</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-安装命令"><span class="toc-number">1.3.</span> <span class="toc-text">2.安装命令</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-配置Samba"><span class="toc-number">1.4.</span> <span class="toc-text">3.配置Samba</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-启动Samba"><span class="toc-number">1.5.</span> <span class="toc-text">4.启动Samba</span></a></li></ol></li></ol>
  
   </div>
 
 <div id="asidepart">
-<div class="closeaside"><a class="closebutton" href="#" title="Hide Sidebar"></a></div>
+<div class="closeaside"><a class="closebutton" href="#" title="隐藏侧边栏"></a></div>
 <aside class="clearfix">
 
   
@@ -160,15 +191,11 @@
 
   
 <div class="categorieslist">
-	<p class="asidetitle">Categories</p>
+	<p class="asidetitle">分类</p>
 		<ul>
 		
 		  
 			<li><a href="/categories/Auto-Operation/" title="Auto Operation">Auto Operation<sup>1</sup></a></li>
-		  
-		
-		  
-		
 		  
 		
 		</ul>
@@ -389,7 +416,7 @@ var _hmt = _hmt || [];
 <!-- Totop Begin -->
 
 	<div id="totop">
-	<a title="Back to Top"><img src="/img/scrollup.png"/></a>
+	<a title="返回顶部"><img src="/img/scrollup.png"/></a>
 	</div>
 	<script src="/js/totop.js"></script>
 
