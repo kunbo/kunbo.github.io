@@ -1,27 +1,26 @@
 
-  
-    <!DOCTYPE HTML>
+ <!DOCTYPE HTML>
 <html >
 <head>
   <meta charset="UTF-8">
   
-    <title>test | 有福方读书</title>
+    <title>Samba实现Win7和Linux之间文件共享 | 有福方读书</title>
     <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
     
     <meta name="author" content="ykb">
     
 
     
-    <meta name="description">
-<meta property="og:type" content="website">
-<meta property="og:title" content="test">
-<meta property="og:url" content="http://kunbo.github.io/test/index.html">
+    <meta name="description" content="为了能够在win7上更加方便的访问linux的工程文件，考虑方便性和简单性，用Samba来实现">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Samba实现Win7和Linux之间文件共享">
+<meta property="og:url" content="http://kunbo.github.io/2016/06/04/Samba/index.html">
 <meta property="og:site_name" content="有福方读书">
-<meta property="og:description">
-<meta property="og:updated_time" content="2016-06-05T01:05:27.595Z">
+<meta property="og:description" content="为了能够在win7上更加方便的访问linux的工程文件，考虑方便性和简单性，用Samba来实现">
+<meta property="og:updated_time" content="2016-11-05T08:45:17.817Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="test">
-<meta name="twitter:description">
+<meta name="twitter:title" content="Samba实现Win7和Linux之间文件共享">
+<meta name="twitter:description" content="为了能够在win7上更加方便的访问linux的工程文件，考虑方便性和简单性，用Samba来实现">
 
     
     <link rel="alternative" href="/atom.xml" title="有福方读书" type="application/atom+xml">
@@ -36,9 +35,9 @@
     <link rel="stylesheet" href="/css/style.css">
 </head>
 
-      <body>
-        <header>
-          
+  <body>
+    <header>
+      
 <div>
 		
 			<div id="imglogo">
@@ -75,31 +74,52 @@
 				</ul>
 			</nav>			
 </div>
-        </header>
-        <div id="container">
-          <div id="main" class="page" itemscope itemprop="blogPost">
+    </header>
+    <div id="container">
+      <div id="main" class="post" itemscope itemprop="blogPost">
   
 	<article itemprop="articleBody"> 
 		<header class="article-info clearfix">
   <h1 itemprop="name">
     
-      <a href="/test/index.html" title="test" itemprop="url">test</a>
+      <a href="/2016/06/04/Samba/" title="Samba实现Win7和Linux之间文件共享" itemprop="url">Samba实现Win7和Linux之间文件共享</a>
   </h1>
   <p class="article-author">By
        
 		<a href="/about" title="ykb" target="_blank" itemprop="author">ykb</a>
 		
   <p class="article-time">
-    <time datetime="2016-06-05T01:05:27.000Z" itemprop="datePublished"> Published 2016-06-05</time>
+    <time datetime="2016-06-04T09:37:45.096Z" itemprop="datePublished"> Published 2016-06-04</time>
     
   </p>
 </header>
 	<div class="article-content">
 		
-		  
+		<div id="toc" class="toc-article">
+			<strong class="toc-title">Contents</strong>
+		
+			
+		
+		</div>
+		
+		<p>Welcome to My Site</p>
+<blockquote>
+<p>一盏灯， 一片昏黄； 一简书， 一杯淡茶。 守着那一份淡定， 品读属于自己的寂寞。 保持淡定， 才能欣赏到最美丽的风景！ 保持淡定， 人生从此不再寂寞。</p>
+</blockquote>
+<ul>
+<li>文本1</li>
+<li>文本2</li>
+<li>文本3</li>
+</ul>
+  
 	</div>
 		<footer class="article-footer clearfix">
 <div class="article-catetags">
+
+<div class="article-categories">
+  <span></span>
+  <a class="article-category-link" href="/categories/Auto-Operation/">Auto Operation</a>
+</div>
 
 
 </div>
@@ -108,7 +128,7 @@
 
 	<div class="article-share" id="share">
 	
-	  <div data-url="http://kunbo.github.io/test/index.html" data-title="test | 有福方读书" data-tsina="undefined" class="share clearfix">
+	  <div data-url="http://kunbo.github.io/2016/06/04/Samba/" data-title="Samba实现Win7和Linux之间文件共享 | 有福方读书" data-tsina="undefined" class="share clearfix">
 	  </div>
 	
 	</div>
@@ -122,8 +142,45 @@
 	
 
 </div>  
-        </div>
-        <footer><div id="footer" >
+      <div class="openaside"><a class="navbutton" href="#" title="Show Sidebar"></a></div>
+
+  <div id="toc" class="toc-aside">
+  <strong class="toc-title">Contents</strong>
+ 
+ 
+ 
+  </div>
+
+<div id="asidepart">
+<div class="closeaside"><a class="closebutton" href="#" title="Hide Sidebar"></a></div>
+<aside class="clearfix">
+
+  
+
+
+  
+<div class="categorieslist">
+	<p class="asidetitle">Categories</p>
+		<ul>
+		
+		  
+			<li><a href="/categories/Auto-Operation/" title="Auto Operation">Auto Operation<sup>1</sup></a></li>
+		  
+		
+		  
+		
+		  
+		
+		</ul>
+</div>
+
+
+  
+
+</aside>
+</div>
+    </div>
+    <footer><div id="footer" >
 	
 	<div class="line">
 		<span></span>
@@ -158,7 +215,7 @@
 		</p>
 </div>
 </footer>
-        <script src="/js/jquery-2.0.3.min.js"></script>
+    <script src="/js/jquery-2.0.3.min.js"></script>
 <script src="/js/jquery.imagesloaded.min.js"></script>
 <script src="/js/gallery.js"></script>
 <script src="/js/jquery.qrcode-0.12.0.min.js"></script>
@@ -202,8 +259,36 @@ $(document).ready(function(){
       m.removeClass('moveMain');
       a.css('display', 'block').removeClass('fadeOut');
       o.css('display', 'none');
+      
+      $('#toc.toc-aside').css('display', 'none');
         
     }
+  });
+});
+</script>
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  var ai = $('.article-content>iframe'),
+      ae = $('.article-content>embed'),
+      t  = $('#toc'),
+      ta = $('#toc.toc-aside'),
+      o  = $('.openaside'),
+      c  = $('.closeaside');
+  if(ai.length>0){
+    ai.wrap('<div class="video-container" />');
+  };
+  if(ae.length>0){
+   ae.wrap('<div class="video-container" />');
+  };
+  c.click(function(){
+    ta.css('display', 'block').addClass('fadeIn');
+  });
+  o.click(function(){
+    ta.css('display', 'none');
+  });
+  $(window).scroll(function(){
+    ta.css("top",Math.max(140,320-$(this).scrollTop()));
   });
 });
 </script>
@@ -320,6 +405,5 @@ var _hmt = _hmt || [];
 
 <!-- Tiny_search End -->
 
-      </body>
-     </html>
-     
+  </body>
+</html>
